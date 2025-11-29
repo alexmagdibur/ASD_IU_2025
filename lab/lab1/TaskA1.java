@@ -1,3 +1,4 @@
+// Реализуйте метод, входными данными которого являются два числа N и M, где N – число в десятичной системе исчисления, а M – число в диапазоне от 2 до 9, основание системы исчисления, в которое надо перевести исходное
 import java.util.Scanner;
 
 public class TaskA1 {
@@ -34,4 +35,5 @@ public class TaskA1 {
     int M = sc.nextInt();
     System.out.println(convertNumber(N, M));
     }
+
 }

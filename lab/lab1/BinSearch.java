@@ -1,3 +1,4 @@
+// Реализовать алгоритм бинарного поиска двумя способами.
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class BinSearch {
         return arr;
     }
 
-    // пузырьковка сортиром
+    // сортировка пузырьком
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {

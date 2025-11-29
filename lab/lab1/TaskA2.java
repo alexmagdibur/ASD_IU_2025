@@ -3,6 +3,12 @@ import java.util.Scanner;
 
 public class TaskA2 {
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String roman = sc.nextLine();
+        System.out.println(convertRoman(roman));
+    }
+
     // переводим буквы в числа
     private static int getRomanValue(char romanChar) {
         return switch (romanChar) {
@@ -45,13 +51,5 @@ public class TaskA2 {
         }
         return result;
     }
-
-    // проверяем
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String roman = sc.nextLine();
-        System.out.println(convertRoman(roman));
-    }
-
 
 }

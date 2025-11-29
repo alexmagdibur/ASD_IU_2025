@@ -1,5 +1,4 @@
 // Реализовать алгоритм бинарного поиска двумя способами.
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class BinSearch {
@@ -12,7 +11,7 @@ public class BinSearch {
 
         // сортировка
         bubbleSort(data);
-        System.out.println("Отсортированный массив: " + Arrays.toString(data));
+        System.out.println("Отсортированный массив: " + data);
 
         // число, которые нужно найти
         System.out.print("Введите число: ");

@@ -1,6 +1,7 @@
+//Дан целочисленный массив. Верните число, частота встречи которого в массиве равна его значению. Если таких чисел нет, вернуть «-1». Если таких чисел несколько, вернуть наибольшее.
 import java.util.Scanner;
 
-public class b1 {
+public class TaskB1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -64,3 +65,4 @@ public class b1 {
     }
 
 }
+

@@ -1,7 +1,27 @@
-//Дан целочисленный массив. Верните число, частота встречи которого в массиве равна его значению. Если таких чисел нет, вернуть «-1». Если таких чисел несколько, вернуть наибольшее.
 import java.util.Scanner;
 
-public class TaskB1 {
+public class b1 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите размер массива: ");
+        int size = scanner.nextInt();
+        int[] nums = new int[size];
+
+        System.out.println("Введите числа: ");
+        for (int i = 0; i < size; i++) {
+            nums[i] = scanner.nextInt();
+        }
+        int result = findNumber(nums);
+        if (result == -1) {
+            System.out.println("Числа не найдены");
+        } else {
+            System.out.println(result);
+        }
+
+        scanner.close();
+    }
 
     public static int findMax(int[] arr) {
         int max = arr[0];
@@ -33,7 +53,7 @@ public class TaskB1 {
         // ищем число, где значение равно частоте
         int result = -1;
         for (int i = 0; i < frequency.length; i++) {
-            if (i > 0 && i == frequency[i]) {
+            if (i == frequency[i]) {
                 if (i > result) {
                     result = i;
                 }
@@ -41,23 +61,6 @@ public class TaskB1 {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Введите размер массива: ");
-        int size = scanner.nextInt();
-        int[] nums = new int[size];
-
-        System.out.println("Введите числа: ");
-        for (int i = 0; i < size; i++) {
-            nums[i] = scanner.nextInt();
-        }
-        int result = findNumber(nums);
-        System.out.println(result);
-
-        scanner.close();
     }
 
 }

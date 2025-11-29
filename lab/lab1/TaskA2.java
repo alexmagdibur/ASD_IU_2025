@@ -1,3 +1,4 @@
+// Реализуйте перевод из римских чисел в арабские.
 import java.util.Scanner;
 
 public class TaskA2 {
@@ -51,5 +52,6 @@ public class TaskA2 {
         String roman = sc.nextLine();
         System.out.println(convertRoman(roman));
     }
+
 
 }
